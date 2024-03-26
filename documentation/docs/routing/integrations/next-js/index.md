@@ -151,8 +151,10 @@ export default function PostShow() {
         <div>
             {isLoading && <p>Loading...</p>}
             {!isLoading && (
-                <h1>{postData?.title}</h1>
-                <p>{postData?.description}</p>
+                <>
+                  <h1>{postData?.title}</h1>
+                  <p>{postData?.description}</p>
+                </>
             )}
         </div>
     );
