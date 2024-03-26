@@ -17,7 +17,8 @@ import { PostCreate } from "./pages/post/create";
 import { PostEdit } from "./pages/post/edit";
 
 function App() {
-  const API_TOKEN = "key0uWArSH56JHNJV";
+  const API_TOKEN =
+    "patI3quNRP17TNsjK.d59600d5955939ed02110fb1107036ff4482496004f020f5bf031f55789cd321";
   const BASE_ID = "appez0LgaOVA6SdCO";
 
   return (

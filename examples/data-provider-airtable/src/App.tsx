@@ -20,7 +20,7 @@ import { PostList, PostCreate, PostEdit, PostShow } from "./pages/posts";
 import { CategoryList, CategoryCreate, CategoryEdit } from "./pages/categories";
 
 const API_TOKEN =
-  "patsgTzxMhfH4fm6s.0f902cb2739578ce139107e6402c2a10c3ec747c600ad64465018b5ba514c0f5";
+  "patI3quNRP17TNsjK.d59600d5955939ed02110fb1107036ff4482496004f020f5bf031f55789cd321";
 const BASE_ID = "appKYl1H4k9g73sBT";
 
 const App: React.FC = () => {
