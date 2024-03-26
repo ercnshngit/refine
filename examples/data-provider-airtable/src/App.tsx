@@ -19,7 +19,8 @@ import "@refinedev/antd/dist/reset.css";
 import { PostList, PostCreate, PostEdit, PostShow } from "./pages/posts";
 import { CategoryList, CategoryCreate, CategoryEdit } from "./pages/categories";
 
-const API_TOKEN = "keyI18pnBeEMfPAIb";
+const API_TOKEN =
+  "patsgTzxMhfH4fm6s.0f902cb2739578ce139107e6402c2a10c3ec747c600ad64465018b5ba514c0f5";
 const BASE_ID = "appKYl1H4k9g73sBT";
 
 const App: React.FC = () => {
@@ -33,11 +34,11 @@ const App: React.FC = () => {
             routerProvider={routerProvider}
             resources={[
               {
-                name: "posts",
-                list: "/posts",
-                create: "/posts/create",
-                edit: "/posts/edit/:id",
-                show: "/posts/show/:id",
+                name: "blog_posts",
+                list: "/blog-posts",
+                create: "/blog-posts/create",
+                edit: "/blog-posts/edit/:id",
+                show: "/blog-posts/show/:id",
               },
               {
                 name: "categories",
@@ -65,10 +66,10 @@ const App: React.FC = () => {
               >
                 <Route
                   index
-                  element={<NavigateToResource resource="posts" />}
+                  element={<NavigateToResource resource="blog_posts" />}
                 />
 
-                <Route path="/posts">
+                <Route path="/blog-posts">
                   <Route index element={<PostList />} />
                   <Route path="create" element={<PostCreate />} />
                   <Route path="edit/:id" element={<PostEdit />} />
